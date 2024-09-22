@@ -1,20 +1,83 @@
-
+/*
+Style.css
+*/
 
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .container {
   max-width: 98%;
   margin: auto;
   padding: 3px;
-  border: 1px solid #000;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0px;
   background-color: #FFF;
 }
+.top { 
+  margin: -3px;
+  padding-top: 10px;
+  padding-left: 15px;
+  background-color: #171925;
+}
+
+.powered-by {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+#powered-by {
+  font-size: 9px;
+  color: #8C8C8C;
+  z-index: 101;
+}
+#CoinMarketCap-logo {
+  margin-top: -13px;
+  margin-left: -5px;
+  width: 28%;
+  height: 7.5%;
+}
+#top-hr1 {
+  position: absolute;
+  margin-top: -1%;
+  margin-left: 31%;
+  width: 1px;
+  height: 50px;
+  background-color: #8C8C8C;
+  border: none;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+#CoinMarketCap-logo {
+  margin-top: -10px;
+  margin-left: -2px;
+  width: 10%;
+  height: 2%;
+}
+#top-hr1 {
+  margin-top: 0.1%;
+  margin-left: 13%;
+}
+}
+
+
+
+
+
+
+
 
 .dev-apydev {
   position: fixed;
@@ -52,9 +115,6 @@ justify-content: space-between;
   margin-top: 25px;
   font-size: 20px;
 }
-
-
-
 
 
 
@@ -2363,7 +2423,6 @@ justify-content: space-between;
   gap: 10px;
 }
 }
-
 .wallet-connect-card, 
 .trust-wallet-card, 
 .metamask-card, 
@@ -2610,6 +2669,8 @@ justify-content: space-between;
 }
 #subscribe-mail {
   border-radius: 0 10px 10px 0;
+  margin-left: -4px;
+  height: 52px;
   border: none;
   font-weight: bold;
   background-color: transparent;
@@ -2619,6 +2680,10 @@ justify-content: space-between;
 }
 #subscribe-mail:hover {
   background-color: #6200EE;
+}
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
 }
 #email {
   width: 200px;
@@ -2636,6 +2701,20 @@ justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
+#invalid-email {
+  display: none;
+  margin-left: 3px;
+  margin-bottom: -5px;
+  font-size: 12px;
+  color: red;
+}
+
+
+
+
+
+
+
 
 
 .to-top {
@@ -2659,5 +2738,6 @@ justify-content: space-between;
 }
 #to-top:hover {
   background-color: #6200EE;
+  cursor: pointer;
 }
 
