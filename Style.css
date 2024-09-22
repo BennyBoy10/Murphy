@@ -1,0 +1,751 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.container {
+  max-width: 98%;
+  margin: auto;
+  padding: 3px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.select-a-wallet {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  margin: 20px auto;
+  width: 90px;
+  height: 4px;
+  border-radius: 8px;
+  background-color: #6200EE;
+}
+.moving-slider {
+  width: 10px; /* Diameter of the circle */
+  height: 10px;
+  background-color: #6200EE;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  animation: moveSlider 4s infinite ease-in-out; /* Smooth animation */
+}
+@keyframes moveSlider {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 10px); /* Move to the right edge minus the ball diameter */
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all-wallets {
+  display: flex;
+  flex-wrap: wrap; /* This allows the items to wrap to the next line */
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+.all-wallets img {
+  border-radius: 30px;
+}
+
+
+.wallet-connect-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#wallet-connect-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.wallet-connect-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wallet-connect {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#wallet-connect-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.trust-wallet-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#trust-wallet-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.trust-wallet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#trust-wallet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#trust-wallet-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.metamask-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#metamask-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.metamask-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#metamask {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#metamask-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.flint-wallet-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#flint-wallet-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.flint-wallet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#flint-wallet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#flint-wallet-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.binance-wallet-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#binance-wallet-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.binance-wallet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#binance-wallet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#binance-wallet-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+.polygon-wallet-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#polygon-wallet-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.polygon-wallet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#polygon-wallet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#polygon-wallet-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+.rainbow-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#rainbow-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.rainbow-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#rainbow {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#rainbow-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+.bitpay-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#bitpay-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.bitpay-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#bitpay {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#bitpay-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.walleth-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#walleth-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.walleth-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#walleth {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#walleth-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+.argent-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#argent-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.argent-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#argent {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#argent-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+.huobi-wallet-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#huobi-wallet-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.huobi-wallet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#huobi-wallet {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#huobi-wallet-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+.encrypted-card {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 315px;
+  box-shadow: 0 0 10px #0000001A;
+  background-color: #FFF;
+}
+#encrypted-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.encrypted-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#encrypted {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#encrypted-url {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+.container {
+  max-width: 99%;
+}
+.all-wallets {
+  flex-direction: row;
+  gap: 10px;
+}
+}
+
+
+.wallet-connect-card, 
+.trust-wallet-card, 
+.metamask-card, 
+.flint-wallet-card, 
+.binance-wallet-card,
+.polygon-wallet-card,
+.rainbow-card,
+.bitpay-card,
+.walleth-card,
+.argent-card,
+.huobi-wallet-card,
+.encrypted-card,
+.compound-card,
+.polkadot-card,
+.iotex-card,
+.coin98-card,
+.coinbase-card,
+.crypto-card,
+.token-pocket-card,
+.math-wallet-card,
+.ledger-live-card,
+.Oneinch-card,
+.dharma-card,
+.trust-vault-card,
+.mykey-card,
+.atomic-card,
+.cool-wallet-card,
+.nash-card,
+.coinomi-card,
+.gridplus-card,
+.tokenary-card,
+.safepal-card,
+.infinito-card,
+.wallet-io-card,
+.ownbit-card,
+.easypocket-card,
+.bridge-wallet,
+.via-wallet-card,
+.bitkeep-card,
+.unstoppable-wallet-card,
+.halodefi-wallet-card,
+.dok-wallet-card,
+.cello-wallet,
+.coinus-card,
+.valora-card,
+.trustee-wallet-card,
+.gaurda-wallet-card,
+.maiar-wallet-card,
+.jade-wallet-card,
+.plasmapay-card,
+.o3-wallet,
+.hashkey-card,
+.rwallet-card,
+.flare-wallet-card,
+.kyberswap-card,
+.atoken-wallet-card,
+.tongue-wallet-card,
+.xinfin-card,
+.talken-wallet-card,
+.keyring-card,
+.midas-wallet-card,
+.at-wallet-card,
+.phantom-card,
+.solflare-card,
+.imtoken-card,
+.others {
+  width: 23%; /* Sets the width so 4 cards fit in a row */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+.wallet-connect-card, 
+.trust-wallet-card, 
+.metamask-card, 
+.flint-wallet-card, 
+.binance-wallet-card,
+.polygon-wallet-card,
+.rainbow-card,
+.bitpay-card,
+.walleth-card,
+.argent-card,
+.huobi-wallet-card,
+.encrypted-card,
+.compound-card,
+.polkadot-card,
+.iotex-card,
+.coin98-card,
+.coinbase-card,
+.crypto-card,
+.token-pocket-card,
+.math-wallet-card,
+.ledger-live-card,
+.Oneinch-card,
+.dharma-card,
+.trust-vault-card,
+.mykey-card,
+.atomic-card,
+.cool-wallet-card,
+.nash-card,
+.coinomi-card,
+.gridplus-card,
+.tokenary-card,
+.safepal-card,
+.infinito-card,
+.wallet-io-card,
+.ownbit-card,
+.easypocket-card,
+.bridge-wallet,
+.via-wallet-card,
+.bitkeep-card,
+.unstoppable-wallet-card,
+.halodefi-wallet-card,
+.dok-wallet-card,
+.cello-wallet,
+.coinus-card,
+.valora-card,
+.trustee-wallet-card,
+.gaurda-wallet-card,
+.maiar-wallet-card,
+.jade-wallet-card,
+.plasmapay-card,
+.o3-wallet,
+.hashkey-card,
+.rwallet-card,
+.flare-wallet-card,
+.kyberswap-card,
+.atoken-wallet-card,
+.tongue-wallet-card,
+.xinfin-card,
+.talken-wallet-card,
+.keyring-card,
+.midas-wallet-card,
+.at-wallet-card,
+.phantom-card,
+.solflare-card,
+.imtoken-card,
+.others {
+  width: 48%; /* For medium screens, show 2 cards per row */
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 600px) {
+.wallet-connect-card, 
+.trust-wallet-card, 
+.metamask-card, 
+.flint-wallet-card, 
+.binance-wallet-card,
+.polygon-wallet-card,
+.rainbow-card,
+.bitpay-card,
+.walleth-card,
+.argent-card,
+.huobi-wallet-card,
+.encrypted-card,
+.compound-card,
+.polkadot-card,
+.iotex-card,
+.coin98-card,
+.coinbase-card,
+.crypto-card,
+.token-pocket-card,
+.math-wallet-card,
+.ledger-live-card,
+.Oneinch-card,
+.dharma-card,
+.trust-vault-card,
+.mykey-card,
+.atomic-card,
+.cool-wallet-card,
+.nash-card,
+.coinomi-card,
+.gridplus-card,
+.tokenary-card,
+.safepal-card,
+.infinito-card,
+.wallet-io-card,
+.ownbit-card,
+.easypocket-card,
+.bridge-wallet,
+.via-wallet-card,
+.bitkeep-card,
+.unstoppable-wallet-card,
+.halodefi-wallet-card,
+.dok-wallet-card,
+.cello-wallet,
+.coinus-card,
+.valora-card,
+.trustee-wallet-card,
+.gaurda-wallet-card,
+.maiar-wallet-card,
+.jade-wallet-card,
+.plasmapay-card,
+.o3-wallet,
+.hashkey-card,
+.rwallet-card,
+.flare-wallet-card,
+.kyberswap-card,
+.atoken-wallet-card,
+.tongue-wallet-card,
+.xinfin-card,
+.talken-wallet-card,
+.keyring-card,
+.midas-wallet-card,
+.at-wallet-card,
+.phantom-card,
+.solflare-card,
+.imtoken-card,
+.others {
+  width: 100%; /* For small screens, show 1 card per row */
+  margin-bottom: -15px;
+}
+}
+
+
+
+
