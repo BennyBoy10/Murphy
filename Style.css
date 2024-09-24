@@ -1,7 +1,3 @@
-/*
-Style.css
-*/
-
 
 body {
   font-family: Arial, sans-serif;
@@ -12,6 +8,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 .container {
   max-width: 98%;
@@ -38,6 +35,7 @@ a {
   font-size: 9px;
   color: #8C8C8C;
   z-index: 101;
+  cursor: pointer;
 }
 #CoinMarketCap-logo {
   margin-top: -13px;
@@ -109,11 +107,13 @@ justify-content: space-between;
 #search-icon {
   margin-top: 25px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 #wallet-icon {
   margin-top: 25px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -154,6 +154,194 @@ justify-content: space-between;
 }
 
 
+
+
+
+.connect-box {
+  display: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+.white-bg {
+  width: 35%;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#close-button {
+  display: block;
+  margin: 0;
+  width: 60px;
+  height: 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #8C8C8C;
+  cursor: pointer;
+}
+#close-button:hover {
+  background-color: grey;
+}
+
+#coin-logo {
+  width: 55px;
+  height: 55px;
+}
+#coin-name {
+  margin: 0;
+}
+#session-secured {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8C8C8C;
+}
+
+.slider-container2 {
+  position: relative;
+  margin: 20px auto;
+  width: 400px;
+  height: 4px;
+  border-radius: 8px;
+  background-color: #6200EE;
+}
+.moving-slider2 {
+  width: 10px; /* Diameter of the circle */
+  height: 10px;
+  background-color: #6200EE;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  animation: moveSlider 4s infinite ease-in-out; /* Smooth animation */
+}
+@keyframes moveSlider {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 10px); /* Move to the right edge minus the ball diameter */
+  }
+  100% {
+    left: 0;
+  }
+}
+#starting-secure-connection {
+  margin: 0;
+}
+#please-wait {
+  font-size: 13px;
+  color: #8C8C8C;
+}
+.session-protected {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#session-shield {
+  margin-top: 3%;
+  width: 30px;
+  height: 30px;
+}
+#session-protected {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8C8C8C;
+}
+#error-occured {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red;
+}
+.try-again {
+  margin: 10px;
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 1px solid #0275D8;
+  color: #0275D8;
+  background-color: #FFF;
+}
+.try-again:hover {
+  color: #FFF;
+  background-color: #0275D8;
+  cursor: pointer;
+}
+.connect-manually {
+  margin-bottom: 30px;
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  color: #FFF;
+  background-color: #5142FC;
+}
+.connect-manually:hover {
+  background-color: #7468FD;
+  cursor: pointer;
+}
+.error-section {
+  display: none;
+}
+.manual-section {
+  display: block;
+}
+#wallet-key {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 1px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid #8C8C8C;
+}
+#wallet-key::placeholder {
+  font-size: 20px;
+  color: #8C8C8C;
+}
+#wallet-key:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+.connect-wallet {
+  margin-bottom: 30px;
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  color: #FFF;
+  background-color: #5142FC;
+}
+.connect-wallet:hover {
+  background-color: #7468FD;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 .all-wallets {
   display: flex;
   flex-wrap: wrap; /* This allows the items to wrap to the next line */
@@ -178,6 +366,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #wallet-connect-logo {
   width: 60px;
@@ -211,6 +400,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #trust-wallet-logo {
   width: 60px;
@@ -244,6 +434,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #metamask-logo {
   width: 60px;
@@ -277,6 +468,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #flint-wallet-logo {
   width: 60px;
@@ -310,6 +502,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #binance-wallet-logo {
   width: 60px;
@@ -343,6 +536,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #polygon-wallet-logo {
   width: 60px;
@@ -376,6 +570,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #rainbow-logo {
   width: 60px;
@@ -409,6 +604,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #bitpay-logo {
   width: 60px;
@@ -442,6 +638,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #walleth-logo {
   width: 60px;
@@ -475,6 +672,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #argent-logo {
   width: 60px;
@@ -508,6 +706,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #huobi-wallet-logo {
   width: 60px;
@@ -541,6 +740,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #encrypted-logo {
   width: 60px;
@@ -574,6 +774,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #compound-logo {
   width: 60px;
@@ -607,6 +808,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #polkadot-logo {
   width: 60px;
@@ -640,6 +842,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #iotex-logo {
   width: 60px;
@@ -673,6 +876,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #coin98-logo {
   width: 60px;
@@ -706,6 +910,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #coinbase-logo {
   width: 60px;
@@ -740,6 +945,7 @@ justify-content: space-between;
   height: 100px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #crypto-logo {
   width: 60px;
@@ -773,6 +979,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #token-pocket-logo {
   width: 60px;
@@ -806,6 +1013,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #math-wallet-logo {
   width: 60px;
@@ -839,6 +1047,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #ledger-live-logo {
   width: 60px;
@@ -872,6 +1081,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #Oneinch-logo {
   width: 60px;
@@ -905,6 +1115,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #dharma-logo {
   width: 60px;
@@ -938,6 +1149,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #trust-vault-logo {
   width: 60px;
@@ -971,6 +1183,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #mykey-logo {
   width: 60px;
@@ -1004,6 +1217,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #atomic-logo {
   width: 60px;
@@ -1037,6 +1251,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #cool-wallet-logo {
   width: 60px;
@@ -1070,6 +1285,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #nash-logo {
   width: 60px;
@@ -1103,6 +1319,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #coinomi-logo {
   width: 60px;
@@ -1136,6 +1353,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #gridplus-logo {
   width: 60px;
@@ -1169,6 +1387,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #tokenary-logo {
   width: 60px;
@@ -1202,6 +1421,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #safepal-logo {
   width: 60px;
@@ -1235,6 +1455,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #infinito-logo {
   width: 60px;
@@ -1268,6 +1489,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #wallet-io-logo {
   width: 60px;
@@ -1301,6 +1523,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #ownbit-logo {
   width: 60px;
@@ -1334,6 +1557,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #easypocket-logo {
   width: 60px;
@@ -1367,6 +1591,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #bridge-wallet-logo {
   width: 60px;
@@ -1400,6 +1625,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #via-wallet-logo {
   width: 60px;
@@ -1433,6 +1659,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #bitkeep-logo {
   width: 60px;
@@ -1466,6 +1693,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #unstoppable-wallet-logo {
   width: 60px;
@@ -1499,6 +1727,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #halodefi-wallet-logo {
   width: 60px;
@@ -1532,6 +1761,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #dok-wallet-logo {
   width: 60px;
@@ -1565,6 +1795,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #cello-wallet-logo {
   width: 60px;
@@ -1598,6 +1829,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #coinus-logo {
   width: 60px;
@@ -1631,6 +1863,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #valora-logo {
   width: 60px;
@@ -1664,6 +1897,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #trustee-wallet-logo {
   width: 60px;
@@ -1697,6 +1931,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #gaurda-wallet-logo {
   width: 60px;
@@ -1730,6 +1965,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #maiar-wallet-logo {
   width: 60px;
@@ -1763,6 +1999,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #jade-wallet-logo {
   width: 60px;
@@ -1796,6 +2033,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #plasmapay-logo {
   width: 60px;
@@ -1829,6 +2067,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #o3-wallet-logo {
   width: 60px;
@@ -1862,6 +2101,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #hashkey-logo {
   width: 60px;
@@ -1895,6 +2135,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #rwallet-logo {
   width: 60px;
@@ -1928,6 +2169,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #flare-wallet-logo {
   width: 60px;
@@ -1961,6 +2203,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #kyberswap-logo {
   width: 60px;
@@ -1994,6 +2237,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #atoken-wallet-logo {
   width: 60px;
@@ -2027,6 +2271,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #tongue-wallet-logo {
   width: 60px;
@@ -2060,6 +2305,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #xinfin-logo {
   width: 60px;
@@ -2093,6 +2339,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #talken-wallet-logo {
   width: 60px;
@@ -2126,6 +2373,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #keyring-logo {
   width: 60px;
@@ -2159,6 +2407,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #midas-wallet-logo {
   width: 60px;
@@ -2192,6 +2441,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #at-wallet-logo {
   width: 60px;
@@ -2225,6 +2475,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #phantom-logo {
   width: 60px;
@@ -2258,6 +2509,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #solfare-logo {
   width: 60px;
@@ -2291,6 +2543,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #xpr-logo {
   width: 60px;
@@ -2324,6 +2577,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #loom-logo {
   width: 60px;
@@ -2358,6 +2612,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #imtoken-logo {
   width: 60px;
@@ -2391,6 +2646,7 @@ justify-content: space-between;
   width: 315px;
   box-shadow: 0 0 10px #0000001A;
   background-color: #FFF;
+  cursor: pointer;
 }
 #others-logo {
   width: 60px;

