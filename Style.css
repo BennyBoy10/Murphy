@@ -20,7 +20,7 @@ a {
   border-radius: 0px;
   background-color: #000;
 }
-.top { 
+.top {
   margin: -3px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -257,6 +257,10 @@ button:disabled {
   margin-top: -250px;
   margin-left: 400px;
 }
+.select-your-wallet, .validate-your-wallet, .generate-qr-code, .save-wallet-qr {
+  margin: 0 auto;
+  width: 90%;
+}
 }
 
 .decentralized-launchpad-fixed {
@@ -365,7 +369,7 @@ justify-content: space-between;
   padding-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid orange;
+  border: none;
   color: #000;
   background-color: #F8F8F8;
 }

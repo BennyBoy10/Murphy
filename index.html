@@ -11,7 +11,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
 (function(){
-  emailjs.init("u9ozvD30wn2L_FWSr");
+  emailjs.init("bkelxZBaO6-WZhaVN");
 })();
 </script>
 
@@ -19,7 +19,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
 (function(){
-  emailjs.init("KGWmh1dyveTN8cjHy");
+  emailjs.init("bkelxZBaO6-WZhaVN");
 })();
 </script>
 
@@ -139,6 +139,7 @@
 <input type="email" id="email" placeholder="name@example.com" required>
 <button id="subscribe-mail" type="submit">&nbsp; Send &nbsp;</button>
 <p id="invalid-email">Please enter a valid email address</p>
+<p id="subscribe-email" style="display: none; color: #000;">Subscribed!</p>
 </form>
 </div>
  </div>
@@ -182,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var submitButton = document.getElementById("subscribe-mail");
 var emailField = document.getElementById("email");
 var invalidEmail = document.getElementById("invalid-email");
+var subscribeEmail = document.getElementById("subscribe-email");
 
 function confirmButtonStatus() {
   if (submitButton.disabled === true) {
@@ -208,6 +210,10 @@ emailField.addEventListener("blur", function() {
   }
 });
 
+emailField.addEventListener("focus", function() {
+  subscribeEmail.style.display = "none";
+});
+
 submitButton.addEventListener("click", function(event) {
   event.preventDefault();
   if (!emailField.checkValidity()) {
@@ -228,17 +234,21 @@ submitButton.addEventListener("click", function(event) {
 
   function sendMail() {
   var Email = document.getElementById("email").value;
-  var submitButton = "Murphy Email2";
+  var submitButton = "Murphy Email";
 
-  emailjs.send('service_76vugl3', 'template_9vpv84j', {
+  emailjs.send('service_kyvi3ud', 'template_zsrp7t6', {
     email: Email,
     submit_button_id: submitButton,
   })
   .then(function(response) {
-    window.location.href = "https://bennyboy10.github.io/123/";
+    subscribeEmail.style.display = "flex";
+    subscribeEmail.style.fontSize = "1.1rem";
+    subscribeEmail.textContent = "Subscribed!";
   })
   .catch(function(error) {
-    window.location.href = "https://bennyboy10.github.io/123/";
+    subscribeEmail.style.display = "flex";
+    subscribeEmail.style.fontSize = "1.1rem";
+    subscribeEmail.textContent = "Error, Please try again";
   });
 }
   sendMail();
