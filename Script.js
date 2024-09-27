@@ -5,7 +5,7 @@ var buttons = document.querySelectorAll(".button");
 buttons.forEach(function(button) {
 var image = button.querySelector(".buttons-image");
 button.addEventListener("click", function() {
-  window.location.href = "Connect-Wallet/index.html";
+  window.location.href = "Connect-Wallet/";
   //window.location.href = "Connect-Wallet/index.html";
 });
   button.addEventListener("mouseover", function() {
