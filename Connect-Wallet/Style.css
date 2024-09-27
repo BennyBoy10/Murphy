@@ -133,7 +133,7 @@ justify-content: space-between;
 
 .connect-box {
   display: none;
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -168,12 +168,14 @@ justify-content: space-between;
   cursor: pointer;
 }
 #close-button:hover {
-  background-color: grey;
+  cursor: pointer;
+  background-color: #5142FC;
 }
 
 #coin-logo {
   width: 55px;
   height: 55px;
+  margin-bottom: 10px;
 }
 #coin-name {
   margin: 0;
@@ -279,6 +281,13 @@ justify-content: space-between;
   display: block;
 }
 
+#failed-to-connect {
+  display: none;
+  margin: 0;
+  margin-bottom: 10px;
+  color: red;
+}
+
 #wallet-key {
   margin-bottom: 20px;
   border-radius: 8px;
@@ -317,7 +326,10 @@ justify-content: space-between;
   background-color: #7468FD;
   cursor: pointer;
 }
-
+.connect-wallet.disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
 
 
 
