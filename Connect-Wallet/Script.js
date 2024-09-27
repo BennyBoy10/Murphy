@@ -1,7 +1,7 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+//document.addEventListener("DOMContentLoaded", function() {
   var errorSection = document.querySelector(".error-section");
   var connectingSection = document.querySelector(".connecting-section");
   var manualSection = document.querySelector(".manual-section");
@@ -231,14 +231,29 @@ connectWallet.addEventListener("click", function() {
   confirmButton2Status();
 });
 
-
-
-
-
-
-
-
+if (walletAddress.value.length <= 5) {
+  connectWallet.disabled = true;
+  confirmButton2Status();
+} else {
+  connectWallet.disabled = false;
+  confirmButton2Status();
+}
+walletAddress.addEventListener("input", function() {
+if (walletAddress.value.length <= 5) {
+  connectWallet.disabled = true;
+  confirmButton2Status();
+} else {
+  connectWallet.disabled = false;
+  confirmButton2Status();
+}
 });
+
+
+
+
+
+
+//});
 
 
 
