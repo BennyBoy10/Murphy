@@ -7,14 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="Style.css">
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-(function(){
-  emailjs.init("bkelxZBaO6-WZhaVN");
-})();
-</script>
-
-
   <title>Page title</title>
 
     <style>
@@ -318,7 +310,7 @@
   <div class="trust-vault-card">
 <img src="Images/Trust-Vault-Logo.jpg" id="trust-vault-logo">
  <div class="trust-vault-info">
-<p id="trust-vault">Dharma</p>
+<p id="trust-vault">Trust Vault</p>
 <p id="trust-vault-url">trustlogy.io</p>
  </div>
   </div>
@@ -487,7 +479,7 @@
 <br>
 
   <div class="cello-wallet-card">
-<img src="Images/Celo-Wallet-Logo.jpg" id="cello-wallet-logo">
+<img src="Images/Cello-Wallet-Logo.jpg" id="cello-wallet-logo">
  <div class="cello-wallet-info">
 <p id="cello-wallet">Cello Wallet</p>
 <p id="cello-wallet-url">cellowallet.app</p>
@@ -666,20 +658,20 @@
   </div>
 <br>
 
-  <div class="solfare-card">
-<img src="Images/Solflare-Logo.jpg" id="solfare-logo">
- <div class="solfare-info">
-<p id="solfare">Solfare</p>
-<p id="solfare-url">solfare.com</p>
+  <div class="solflare-card">
+<img src="Images/Solflare-Logo.jpg" id="solflare-logo">
+ <div class="solflare-info">
+<p id="solflare">Solflare</p>
+<p id="solflare-url">solflare.com</p>
  </div>
   </div>
 <br>
 
-  <div class="xpr-card">
-<img src="Images/XRP-Logo.jpg" id="xpr-logo">
- <div class="xpr-info">
-<p id="xpr">XPR</p>
-<p id="xpr-url">xprnetwork.org</p>
+  <div class="xrp-card">
+<img src="Images/XRP-Logo.jpg" id="xrp-logo">
+ <div class="xrp-info">
+<p id="xrp">XRP</p>
+<p id="xrp-url">xrpnetwork.org</p>
  </div>
   </div>
 <br>
@@ -748,10 +740,17 @@
 
     </div>
 
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("bkelxZBaO6-WZhaVN");
+})();
+</script>
+
  <script src="Script.js"></script>
 
   <script>
-
 var submitButton = document.getElementById("subscribe-mail");
 var emailField = document.getElementById("email");
 var invalidEmail = document.getElementById("invalid-email");
@@ -825,9 +824,6 @@ submitButton.addEventListener("click", function(event) {
 }
   sendMail();
 });
-
-
-
   </script>
 
   <script>
@@ -861,8 +857,6 @@ window.onscroll = function() {
   } else {
     toTopButton.style.display = "none";
   }
-
-
 
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
   var devApydevDiv = document.querySelector('.dev-apydev');
