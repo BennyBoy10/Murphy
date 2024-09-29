@@ -1,5 +1,4 @@
 
-
 //document.addEventListener("DOMContentLoaded", function() {
   var errorSection = document.querySelector(".error-section");
   var connectingSection = document.querySelector(".connecting-section");
