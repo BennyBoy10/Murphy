@@ -1,5 +1,4 @@
 
-
 var buttons = document.querySelectorAll(".button");
 
 buttons.forEach(function(button) {
